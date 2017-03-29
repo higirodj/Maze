@@ -42,7 +42,7 @@ Maze::Maze(std::string inputFile) {
 
 bool
 Maze::onBorder(Node n) {
-    return isOnBorder = ((n.nodeRow() - 1) == 0 ||
+    return ((n.nodeRow() - 1) == 0 ||
             (n.nodeRow() + 1) == numRows * 2 || (n.nodeCol() - 1 == 0) ||
             (n.nodeCol() + 1) == numCols * 2);
 }
